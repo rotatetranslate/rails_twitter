@@ -6,5 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 tweets = Tweet.create([
-    {content: "just a test tweet"}
+    {content: "just a test tweet", user: "made up username"},
+    {content: "tweets once", user: "yung me"}
   ])

@@ -1,0 +1,19 @@
+<h1>Tweet yr heart out</h1>
+
+<%= form_for @tweet do |f| %>
+
+  <div>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </div>
+
+    <div>
+    <%= f.label :user %>
+    <%= f.text_field :user %>
+  </div>
+
+  <%= f.submit "tweet be free!" %>
+
+<% end %>
+
+<%= link_to "See all tweets", tweets_path %>

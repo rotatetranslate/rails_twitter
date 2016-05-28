@@ -4,6 +4,8 @@
   <% @tweets.each do |tweet| %>
     <li>
       <%= tweet.content %>
+      posted by <%= tweet.user %>
     </li>
   <% end %>
 </ul>
+
