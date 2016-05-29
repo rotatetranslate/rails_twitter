@@ -1,3 +1,10 @@
 <h2><%= @tweet.content %></h2>
 <h3>Posted by: <%= @tweet.user %></h3>
 <h3>Posted at: <%= @tweet.created_at%></h3>
+
+<%= link_to "edit this tweet", edit_tweet_path %>
+<br>
+<%= link_to "delete tweet", tweet_path, method: :delete,
+data: { confirm: "u sure u wanna delete?" } %>
+<br>
+<%= link_to "See all tweets", tweets_path %>

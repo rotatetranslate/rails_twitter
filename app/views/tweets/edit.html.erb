@@ -1,0 +1,8 @@
+<h1>Edit tweet</h1>
+
+<%= render 'form' %>
+
+<%= link_to "delete tweet", tweet_path, method: :delete,
+data: { confirm: "u sure u wanna delete?" } %>
+<br>
+<%= link_to "back to all tweets", tweets_path %>

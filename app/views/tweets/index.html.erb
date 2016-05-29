@@ -3,9 +3,10 @@
 <ul>
   <% @tweets.each do |tweet| %>
     <li>
-      <%= tweet.content %>
+      <%= link_to tweet.content, tweet_path(tweet) %>
       posted by <%= tweet.user %>
     </li>
   <% end %>
 </ul>
 
+<%= link_to "tweet a new tweet", new_tweet_path %>
